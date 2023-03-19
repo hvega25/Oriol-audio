@@ -1,0 +1,19 @@
+body{
+    width: 400px;
+    text-align: center;
+    
+}
+header {
+    border: solid;
+    background-color: #186c1c;
+}
+
+nav {
+    background-color: #50ac54;
+    border: solid;
+}
+
+section{
+    background-color: #50ac54;
+    border: solid;
+}
