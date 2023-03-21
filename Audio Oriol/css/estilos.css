@@ -1,19 +1,116 @@
-body{
-    width: 400px;
+.contenedor-reproductor {
+    height: 800px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+    margin-top: 100px;
     text-align: center;
-    
+    padding: 10px;
 }
+
 header {
-    border: solid;
     background-color: #186c1c;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 nav {
     background-color: #50ac54;
-    border: solid;
+    height: 250px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-section{
+nav>p {
+    padding: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+section {
     background-color: #50ac54;
-    border: solid;
+    height: 250px;
+    margin: 10px;
+
+    border-radius: 10px;
+
+}
+
+.contenedor_botones {
+    align-items: center;
+    padding: 50px;
+    display: grid;
+    grid-template-areas: "atras reproducir siguiente"
+        "silencio volumen volumen_100"
+        "nivel_volumen nivel_volumen nivel_volumen"
+    ;
+}
+
+body {
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+#imagen {
+    border-radius: 50%;
+    width: 50%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+.atras {
+    grid-area: atras;
+    font-size: 50px;
+}
+
+.reproducir {
+    grid-area: reproducir;
+    font-size: 100px;
+}
+
+.siguiente {
+    grid-area: siguiente;
+    font-size: 50px;
+}
+
+.silencio {
+    grid-area: silencio;
+    font-size: 25px;
+}
+
+.volumen {
+    grid-area: volumen;
+    font-size: 25px;
+    width: 100%;
+}
+
+.v_cien {
+    grid-area: volumen_100;
+    font-size: 25px;
+}
+
+.nivel_volumen {
+    grid-area: nivel_volumen;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.boton_rep {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
 }

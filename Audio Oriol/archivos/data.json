@@ -1,0 +1,11 @@
+{
+    "playlist":[
+        {
+            "name" : "Canción 1",
+            "artist" : "Artista 1",
+            "path" : "../audios/yenss - Bittersweet v2.mp3",
+            "duration": "2:42",
+            "img": "../img/Moo.jpg"
+        }
+    ]
+}
