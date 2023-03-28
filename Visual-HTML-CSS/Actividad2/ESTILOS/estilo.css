@@ -1,0 +1,322 @@
+/* Animación con css *
+
+/*1. Keyframe que desaparece */
+@keyframes animacion_texto{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*2. Keyframe que desaparece */
+@keyframes animacion_texto_2{
+    0%   {color: yellow;}
+    25%  {color: yellow;}
+    50%  {color: orange;}
+    100% {color: orange;}
+}
+
+/*3. Keyframe que desaparece */
+@keyframes animacion_texto_3{
+    0%   {color: orange;}
+    25%  {color: orange;}
+    50%  {color: white;}
+    100% {color: white;}
+}
+
+
+
+/* Editar cuerpo general de la página*/
+body{
+    width: 90%;
+    margin: 0px;
+  
+}
+
+/*Header principal del encabezado*/
+ header {
+   background: black;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+/* Edición enlace header*/
+#header_galeria{
+    width: 100%;
+}
+
+
+
+/*Edición enlace y dar formato*/
+nav a{
+    color: white;
+    text-decoration-line: none;
+    float: right;
+    margin-right: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Edición cuando el ratón se ubica en el enlace*/
+nav a:hover{
+    text-decoration-line: underline ;
+    color: aqua;
+}
+
+/* Imagen del header*/
+.section_header img {
+    width: 100%;
+    height: 600px;
+}
+
+
+/*Edición texto dentro de la imagen  del encabezado*/
+#texto_en_imagen{
+  position: absolute;
+  top: 30%;
+  width: 90%;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  margin-left: 10%;
+  font-family: sans-serif;
+  /*Las animaciones es nuevo
+  animation-name: animacion_texto ;
+  animation-name: animacion_texto_2 ;*/
+  animation-name: animacion_texto_3 ;
+  animation-duration: 4s;
+}
+
+/*Imagen y texto de sobre nosoltres*/
+#texto_SobreNosoltres{
+    padding: 60px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 200px;
+    position: relative;
+}
+
+/*Contenedor de imagen y texto 1*/
+.Contedor_imagenYtexto1{
+    width: 75%;
+    margin-left: 16%;
+}
+
+/*Contenedor la imagen sobreNosoltres1*/
+.contenedor_imagen1{
+    float: left;
+    width: 30%;
+}
+/*Elemento imagen*/
+#ima2{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*Contenedor texto*/
+.texto_carta1{
+    float:right;
+    width: 60%;
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 19px;
+}
+
+
+/*Contenedor texto*/
+.texto_carta2{
+    float:left;
+    width: 60%;
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 19px;
+}
+
+/*Edición para separar elementos*/
+.contenedor_sobreNosoltres_2{
+    position: relative;
+    margin-top: 20%;
+}
+
+/*Contenedor de imagen y texto 2*/
+.Contedor_imagenYtexto2{
+    width: 75%;
+    margin-left: 16%;
+}
+
+/*Contenedor la imagen sobreNosoltres1*/
+.contenedor_imagen2{
+    float: right;
+    width: 30%;
+    position: relative;
+}
+
+/*Elemento imagen*/
+#imagen2{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/*Menu*/
+.menu_principal{
+    margin-top: 40%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+
+.menu{
+    background-color: rgb(65, 82, 158);
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.texto_1{
+    margin-left: 60px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.galeria{
+    margin-bottom: 40px;
+   
+}
+
+/*edicion grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+    gap:10px;
+    width: 40%;
+    padding: 10px;
+    margin-left: 40px;
+  }
+  
+  .grid-container .item1{
+    border: solid 1px black;
+    padding-top: 250px;
+     
+  }
+
+  .grid-container .item2{
+   text-align: justify;
+   padding: 30px;
+      font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1{
+    grid-column: 1/1;
+    grid-row: 1/3;
+  }
+
+  .item2{
+    grid-column: 2/4;
+    grid-row: 1;
+  }
+ 
+
+  .item3{
+    grid-column: 2/3;
+    grid-row:2;
+  }
+
+  .item4{
+    grid-column: 3/4;
+    grid-row:2;
+  }
+  
+
+.grid-container img{
+     border-radius: 2.5%;
+     width: 600px;
+}
+
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria img:hover{
+    border-right-style: double;
+    border-top-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+
+}
+.galeria img {
+    width: 300px;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.galeria .ima1, .ima4,.ima5,.ima8{
+    filter: brightness(40%)
+}
+
+/*Final edicion grid*/
+/*Edición fondo de pie de página*/
+footer{
+background-color: black;
+color: white;
+
+padding: 10px;
+position: relative;
+width: 100%;
+}
+
+footer div{
+    margin: 10px;
+    height: 20px;
+    
+}
+footer img{
+    margin-right: 10px;
+}
+
+footer p{
+    margin-top: 0px;
+}
+
+.correo{
+    display: flex;
+    float: left;
+}
+
+.telefono{
+    display: flex;
+}
+
+.Hecho{
+    float: right;
+    margin-top: -30px;
+}
+
+
+footer p{
+    font-family: sans-serif;
+}
+
+
+
+
