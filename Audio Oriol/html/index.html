@@ -26,7 +26,7 @@
         <section>
             <audio id="musica"></audio>
             <div class="contenedor_botones">
-                <span class="material-symbols-outlined atras">
+                <span onclick="retroceder_musica()" class="material-symbols-outlined atras">
                     skip_previous
                 </span>
                 <button class="boton_rep"  onclick="control_musica()">
@@ -34,10 +34,11 @@
                         play_circle
                     </span>
                 </button>
-                
-                <span class="material-symbols-outlined siguiente">
-                    skip_next
-                </span>
+                <button onclick="adelantar_musica()">
+                    <span class="material-symbols-outlined siguiente">
+                        skip_next
+                    </span>
+                </button>
                 <br>
                 <span class="material-symbols-outlined silencio">
                     volume_mute

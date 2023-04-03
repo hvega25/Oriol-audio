@@ -14,6 +14,9 @@ header {
     border-radius: 10px;
 }
 
+button{
+    background-color: #50ac54;
+}
 nav {
     background-color: #50ac54;
     height: 250px;
