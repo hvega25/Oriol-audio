@@ -3,8 +3,22 @@
         {
             "name" : "Canción 1",
             "artist" : "Artista 1",
-            "path" : "../audios/yenss - Bittersweet v2.mp3",
-            "duration": "2:42",
+            "path" : "../audios/electronica.mp3",
+            "duration": "1:22",
+            "img": "../img/Moo.jpg"
+        },
+        {
+            "name" : "Canción 2",
+            "artist" : "Artista 2",
+            "path" : "../audios/Vivaldi.mp3",
+            "duration": "1:50",
+            "img": "../img/Moo.jpg"
+        },
+        {
+            "name" : "Canción 3",
+            "artist" : "Artista 3",
+            "path" : "../audios/House.mp3",
+            "duration": "6:05",
             "img": "../img/Moo.jpg"
         }
     ]

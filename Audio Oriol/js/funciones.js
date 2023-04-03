@@ -1,4 +1,3 @@
-
 const cargarMusica = () => {
     fetch("../archivos/data.json")
         .then(respuesta => {
@@ -51,17 +50,30 @@ const cargarTitulo = () => {
         }
         )
 }
+
 var iniciar = document.getElementById('musica');
 var nivel_volumen = document.querySelector('.volumen');
 var mostrar_nivel_volumen = document.querySelector('.nivel_volumen');
 
 
-function control_musica(){
-    if(iniciar.paused === true){
-        iniciar.play();
-    }else{
-        iniciar.pause();
+function control_musica() {
+    const boton = document.querySelector('.boton_rep');
+    const icono = boton.querySelector('.material-symbols-outlined');
+    
+    if (iniciar.paused) {
+      iniciar.play();
+      icono.textContent = 'pause_circle';
+    } else {
+      iniciar.pause();
+      icono.textContent = 'play_circle';
     }
+  }
+  
+function adelantar_musica(){
+
+}
+function retroceder_musica(){
+    
 }
 
 nivel_volumen.oninput = () => {
